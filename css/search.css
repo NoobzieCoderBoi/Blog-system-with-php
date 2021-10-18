@@ -1,0 +1,6 @@
+@media only screen and (max-width: 570px){
+    .posts .post{
+        margin: 10px auto 20px auto !important;
+        width: 95% !important;
+    }
+}

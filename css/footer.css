@@ -1,0 +1,208 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: #5863DB;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    padding: 40px;
+    color: #fff !important;
+}
+
+.footer h2{
+    font-weight: 200;
+}
+
+.footer .info{
+    color: #fff;
+    line-height: 1.8;
+}
+
+.footer .recent-posts .rposts ul{
+    list-style: none;
+}
+
+.footer .recent-posts .rposts ul li{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.footer .recent-posts .rposts i{
+    position: absolute;
+    margin: 5px 0;
+}
+
+.footer .recent-posts .rposts ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer .recent-posts .rposts ul li .date{
+    color: #bbb !important;
+    font-size: 15px !important;
+}
+
+.footer .ml{
+    margin-left: 40px;
+    width: 30%;
+}
+
+.footer .contact .mail{
+    margin-top: 15px;
+}
+
+.footer .contact .mail a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer .contact .location{
+    margin-top: 15px;
+}
+
+.footer .contact .location a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer .contact .mail i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.footer .contact .location i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.footer .contact .icons{
+    display: flex;
+    margin: 20px 0;
+}
+
+.footer .contact .icons .bg-black{
+    background: #222;
+    cursor: pointer;
+    margin-left: 5px;
+    transition:  all 0.3s;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .contact .icons .bg-black a{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 18px;
+    color: #fff;
+}
+
+.footer .contact .icons .bg-black:nth-child(1):hover{
+    background: #1E77EF;
+}
+
+.footer .contact .icons .bg-black:nth-child(2):hover{
+    background: #FF0000;
+}
+
+.footer .contact .icons .bg-black:nth-child(3):hover{
+    background:radial-gradient(circle farthest-corner at 35% 100%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 10% 140%, #feda7e, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent);
+}
+
+.footer .contact .icons .bg-black:nth-child(4):hover{
+    background: #55ACEE;
+}
+
+.fbar{
+    background: #222;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px 15px 25px 15px;
+}
+
+.fbar .links ul{
+    list-style: none;
+    display: inline-flex;
+}
+
+.fbar .links ul li{
+    margin-right: 15px;
+}
+
+.fbar .links ul li a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+.fbar .copy p{
+    font-size: 16px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 775px){
+
+    .pagination {
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+    .footer{
+        justify-content: unset;
+        align-items: unset;
+        flex-direction: column;
+    }
+
+    .footer .ml{
+        width: 90%;
+        margin-left: 10px;
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    .footer .contact .icons{
+        flex-wrap: wrap;
+    }
+
+    .footer .contact .icons .bg-black{
+        margin-top: 5px;
+    }
+
+    .fbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fbar .links ul{
+        margin: 0;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .fbar .links ul li{
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+
+    .fbar .links ul li a{
+        font-size: 18px;
+    }
+
+    .fbar .copy p{
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 775px) and (max-width: 1280px){
+    .footer{
+        flex-direction: row;
+    }
+
+    .footer .ml{
+        margin-left: 15px;
+    }
+
+}

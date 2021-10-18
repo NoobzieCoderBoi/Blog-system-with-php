@@ -1,0 +1,149 @@
+.sidebar{
+    margin-right: 30px !important;
+    background: #fff !important;
+    width: 50% !important;
+    padding: 30px !important;
+}
+
+.sidebar .search{
+    height: 170px !important;
+    margin-top: 15px !important;
+}
+
+.sidebar .search .label{
+    color: #fff !important;
+    font-size: 13px !important;
+    font-weight: 200 !important;
+    background: #7F89E3 !important;
+    padding: 5px !important;
+}
+
+.sidebar .search .label h2{
+    font-weight: 100 !important;
+}
+
+.sidebar .search .input .form-control{
+    background: #f5f5f5 !important;
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.08) inset !important;
+    color: #333 !important;
+    letter-spacing: 0 !important;
+    border-color: #e8e8e8 !important;
+    margin-top: 30px !important;
+    outline: none !important;
+    border: none !important;
+    width: 100% !important;
+    height: 50px !important;
+    padding: 20px 20px !important;
+    font-size: 1rem !important;
+}
+
+.sidebar .search .input .form-control:focus{
+    outline: 2px solid #5863DB !important;
+}
+
+.sidebar .social{
+    height: 140px !important;
+    margin-top: 15px !important;
+}
+
+.sidebar .social .icons{
+    margin-top: 30px !important;
+}
+
+.sidebar .social .icons a{
+    text-decoration: none !important;
+    font-size: 20px !important;
+    padding: 10px 17px 10px 14px !important;
+    transition: all 0.3s !important;
+}
+
+.sidebar .social .icons a:nth-child(1){
+    color: #1E77EF !important;
+}
+
+.sidebar .social .icons a:nth-child(1):hover{
+    background: #1E77EF !important;
+    color: #fff !important;
+}
+.sidebar .social .icons a:nth-child(2):hover{
+    background: #55ACEE !important;
+    color: #fff !important;
+}
+.sidebar .social .icons a:nth-child(3):hover{
+    background:radial-gradient(circle farthest-corner at 35% 100%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 10% 140%, #feda7e, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent) !important;
+    color: #fff !important;
+}
+.sidebar .social .icons a:nth-child(4):hover{
+    background: #FF0000 !important;
+    color: #fff !important;
+}
+
+.sidebar .social .icons a:nth-child(2){
+    color: #55ACEE !important;
+}
+
+.sidebar .social .icons a:nth-child(3){
+    color: #000 !important;
+}
+
+.sidebar .social .icons a:nth-child(4){
+    color: #FF0000 !important;
+}
+
+.sidebar .social .label{
+    color: #fff !important;
+    font-size: 13px !important;
+    font-weight: 200 !important;
+    background: #7F89E3 !important;
+    padding: 5px !important;
+}
+
+.sidebar .social .label h2{
+    font-weight: 100 !important;
+}
+
+.sidebar .category{
+    margin-top: 15px !important;
+}
+
+.sidebar .category .label{
+    color: #fff !important;
+    font-size: 13px !important;
+    font-weight: 200 !important;
+    background: #7F89E3 !important;
+    padding: 5px !important;
+}
+
+.sidebar .category .label h2{
+    font-weight: 100 !important;
+}
+
+.sidebar .category .text{
+    margin-top: 20px !important;
+}
+
+.sidebar .category .text span{
+    font-size: 25px !important;
+    font-weight: 100 !important;
+}
+
+.sidebar .category .categories ul{
+    list-style: none !important;
+}
+
+.sidebar .category .categories ul li {
+    margin-top: 5px !important;
+}
+
+.sidebar .category .categories ul li a{
+    text-decoration: none !important;
+    color: #5863DB !important;
+}
+
+@media only screen and (max-width: 895px){
+    .sidebar{
+        width: 90% !important;
+        margin-top: 20px !important;
+        margin-left: 5% !important;
+    }
+}
