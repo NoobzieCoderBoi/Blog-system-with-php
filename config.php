@@ -7,7 +7,7 @@ define('DB_NAME', 'db_blog');
 $conn = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
 if($conn->connect_error){
-    die("Cann't connect to database <br>". $conn->connect_error);
+    die("Can't connect to database <br>". $conn->connect_error);
 };
 
 ?>
