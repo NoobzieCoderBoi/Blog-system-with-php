@@ -21,7 +21,7 @@ include('checklogin.php');
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/blog/index.php">Online Tutorials</a>
+        <a class="navbar-brand" href="/blog/index">Online Tutorials</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,19 +30,19 @@ include('checklogin.php');
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" style="cursor: pointer;" href="dashboard.php">Dashboard<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" style="cursor: pointer;" href="dashboard">Dashboard<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="cursor: pointer;" href="new-post.php">New Post<span class="sr-only"></span></a>
+                    <a class="nav-link" style="cursor: pointer;" href="new-post">New Post<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" style="cursor: pointer;" href="posts.php">Posts<span class="sr-only"></span></a>
+                    <a class="nav-link active" style="cursor: pointer;" href="posts">Posts<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="cursor: pointer;" href="categories.php">Categories<span class="sr-only"></span></a>
+                    <a class="nav-link" style="cursor: pointer;" href="categories">Categories<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="cursor: pointer;" href="admins.php">Admins<span class="sr-only"></span></a>
+                    <a class="nav-link" style="cursor: pointer;" href="admins">Admins<span class="sr-only"></span></a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto ml-md-0">
@@ -51,9 +51,9 @@ include('checklogin.php');
                         <i class="fa fa-user-alt"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="profile.php">Profile</a>
+                        <a class="dropdown-item" href="profile">Profile</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="logout.php">Logout</a>
+                        <a class="dropdown-item" href="logout">Logout</a>
                     </div>
                 </li>
             </ul>
@@ -91,10 +91,10 @@ include('checklogin.php');
                         while ($row = $res->fetch_assoc()) {
                     ?>
                             <th scope="row"><?php echo $row['pid'] ?></th>
-                            <td><a href="/blog/tutorial.php?pid=<?php echo $row['pid'] ?>" target="_blank"><?php echo $row['post_title'] ?></a></td>
+                            <td><a href="/blog/tutorial?pid=<?php echo $row['pid'] ?>" target="_blank"><?php echo $row['post_title'] ?></a></td>
                             <td><?php echo substr($row['post_content'], 0, 80) ?></td>
-                            <td><a href="edit-post.php?pid=<?php echo $row['pid'] ?>" class="btn btn-success py-1" target="_blank">Edit</a></td>
-                            <td><a href="delete-post.php?pid=<?php echo $row['pid'] ?>" class="btn btn-danger py-1">Delete</a></td>
+                            <td><a href="edit-post?pid=<?php echo $row['pid'] ?>" class="btn btn-success py-1" target="_blank">Edit</a></td>
+                            <td><a href="delete-post?pid=<?php echo $row['pid'] ?>" class="btn btn-danger py-1">Delete</a></td>
                 </tr>
         <?php
                         }

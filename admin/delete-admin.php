@@ -11,7 +11,7 @@ if (isset($_GET['aid'])) {
     $row['post_banner'];
     unlink("uploads/" . $row['post_banner']);
     $delete_post_res = $conn->query($delete_post_sql);
-    header('Location: posts.php');
+    header('Location: posts');
 } else {
-    header('Location: posts.php');
+    header('Location: posts');
 }

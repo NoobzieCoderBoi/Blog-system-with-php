@@ -6,7 +6,8 @@ $details = $user_details->fetch_assoc();
 $role = $details['role'];
 
 if($role != 'admin'){
-    die('Permision denied for this user');
+    die('Permision denied for this User');
     exit;
 }
+
 ?>
