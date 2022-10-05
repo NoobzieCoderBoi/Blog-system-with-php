@@ -54,19 +54,19 @@ if ($res2->num_rows <= 0) {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" style="cursor: pointer;" href="dashboard.php">Dashboard<span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" style="cursor: pointer;" href="dashboard">Dashboard<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="cursor: pointer;" href="new-post.php">New Post<span class="sr-only"></span></a>
+                    <a class="nav-link" style="cursor: pointer;" href="new-post">New Post<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="cursor: pointer;" href="posts.php">Posts<span class="sr-only"></span></a>
+                    <a class="nav-link" style="cursor: pointer;" href="posts">Posts<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="cursor: pointer;" href="categories.php">Categories<span class="sr-only"></span></a>
+                    <a class="nav-link" style="cursor: pointer;" href="categories">Categories<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="cursor: pointer;" href="admins.php">Admins<span class="sr-only"></span></a>
+                    <a class="nav-link" style="cursor: pointer;" href="admins">Admins<span class="sr-only"></span></a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto ml-md-0">
@@ -75,9 +75,9 @@ if ($res2->num_rows <= 0) {
                       <i class="fa fa-user"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="profile.php">Profile</a>
+                        <a class="dropdown-item" href="profile">Profile</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="logout.php">Logout</a>
+                        <a class="dropdown-item" href="logout">Logout</a>
                     </div>
                 </li>
             </ul>

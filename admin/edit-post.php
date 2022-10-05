@@ -53,7 +53,7 @@ if (isset($_GET['pid'])) {
         }
     }
 } else {
-    header('Location: dashboard.php');
+    header('Location: dashboard');
 }
 ?>
 <!DOCTYPE html>
@@ -72,26 +72,26 @@ if (isset($_GET['pid'])) {
 
 <body class="sb-nav-fixed">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/blog/index.php">Online Tutorials</a>
+        <a class="navbar-brand" href="/blog/index">Online Tutorials</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" style="cursor: pointer;" href="dashboard.php">Dashboard<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" style="cursor: pointer;" href="dashboard">Dashboard<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" style="cursor: pointer;" href="new-post.php">New Post<span class="sr-only"></span></a>
+                    <a class="nav-link active" style="cursor: pointer;" href="new-post">New Post<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="cursor: pointer;" href="posts.php">Posts<span class="sr-only"></span></a>
+                    <a class="nav-link" style="cursor: pointer;" href="posts">Posts<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="cursor: pointer;" href="categories.php">Categories<span class="sr-only"></span></a>
+                    <a class="nav-link" style="cursor: pointer;" href="categories">Categories<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="cursor: pointer;" href="admins.php">Admins<span class="sr-only"></span></a>
+                    <a class="nav-link" style="cursor: pointer;" href="admins">Admins<span class="sr-only"></span></a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto ml-md-0">
@@ -100,9 +100,9 @@ if (isset($_GET['pid'])) {
                         <i class="fa fa-user"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="profile.php">Profile</a>
+                        <a class="dropdown-item" href="profile">Profile</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="logout.php">Logout</a>
+                        <a class="dropdown-item" href="logout">Logout</a>
                     </div>
                 </li>
             </ul>

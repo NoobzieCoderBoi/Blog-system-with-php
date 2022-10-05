@@ -14,7 +14,7 @@
         if($result){
             $_SESSION['LOGGEDIN']=true;
             $_SESSION['USERNAME'] = $username;
-            header('Location: dashboard.php');
+            header('Location: dashboard');
             die();
         }else{
             $class='d-block';

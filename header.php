@@ -9,10 +9,11 @@
         <div class="menu-icon"></div>
         <div class="navigation">
             <ul class="menu">
-                <li><a href="home">Home</a></li>
+                <li><a href="index">Home</a></li>
                 <li><a href="about">About</a></li>
                 <li><a href="tutorial">Tutorial</a></li>
                 <li><a href="contact">Contact</a></li>
+                <li><a href="admin/index">Login</a></li>
             </ul>
         </div>
     </div>

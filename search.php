@@ -38,7 +38,7 @@
         <div class="heading">
             <h2>Search results for: <?php echo $search_term ?></h2>
         </div>
-        <div style="display: flex; justify-content:center; align-items: center; margin-bottom: 20px;"><a href="search.php">Search again?</a></div>
+        <div style="display: flex; justify-content:center; align-items: center; margin-bottom: 20px;"><a href="search">Search again?</a></div>
         <div class="posts" style="margin: auto !important;">
             <?php
             if(isset($_GET['start'])){
@@ -62,7 +62,7 @@
                             </div>
 
                             <div class="p-title">
-                                <a href="tutorial.php?pid=<?php echo $row['pid']; ?>">
+                                <a href="tutorial?pid=<?php echo $row['pid']; ?>">
                                     <h2><?php echo $row['post_title']; ?></h2>
                                 </a>
                             </div>
