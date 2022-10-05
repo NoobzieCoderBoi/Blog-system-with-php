@@ -4,11 +4,14 @@
     include('config.php');
     $class = 'd-none';
     if(isset($_POST['submit'])){
-        $username = mysqli_real_escape_string($conn, $_POST['username']);
-        $password = mysqli_real_escape_string($conn, $_POST['password']);
-        $sql = "SELECT * FROM admins WHERE username='$username' AND password='$password'";
-        $res = $conn->query($sql);
-        if($res->num_rows>0){
+        $username = $_POST['username'];
+        $password = crypt($_POST['password'], PASSWORD_SALT);
+
+        $stmt = $conn->prepare("SELECT * FROM admins WHERE username= ? AND password = ?");
+        $stmt->bind_param("ss", $username, $password);
+        $stmt->execute();
+        $result = $stmt->get_result()->fetch_assoc();
+        if($result){
             $_SESSION['LOGGEDIN']=true;
             $_SESSION['USERNAME'] = $username;
             header('Location: dashboard.php');
